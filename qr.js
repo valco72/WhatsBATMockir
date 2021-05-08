@@ -1,4 +1,3 @@
-/* WhatsBAT by valco72 // BAT HAZRETLERI
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
 const {StringSession} = require('./whatsasena/');
@@ -12,7 +11,7 @@ async function whatsAsena () {
     
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('BAT')}
-${chalk.white.italic('AsenaString Kodu Alıcı')}
+${chalk.white.italic('BATString Kodu Alıcı')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     });
@@ -25,7 +24,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         );
         
         if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `ASENA_SESSION="${st}"`);
+            fs.writeFileSync('config.env', `BAT_SESSION="${st}"`);
         }
 
         console.log(

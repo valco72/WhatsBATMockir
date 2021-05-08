@@ -21,7 +21,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'MOCKIR EDITION',
     CHANNEL: 'https://t.me/WhatsBAT',
-    SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
+    SESSION: process.env.BAT_SESSION === undefined ? '' : process.env.BAT_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://www.dejongeturken.com/wp-content/uploads/2018/03/3741_abendstimmung-in-kayseri-mitchell.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
