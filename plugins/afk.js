@@ -1,12 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-Developer & Co-Founder - Phaticusthiccy
-*/
-
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
@@ -86,7 +77,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
 }));
 
 Asena.addCommand({on: 'text', fromMe: true, deleteCommand: false}, (async (message, match) => {
-    if (AFK.isAfk && !message.id.startsWith('3EB0')) {
+    if (AFK.isAfk && !message.id.startsWith('JPZOBWcWJZQC')) {
         AFK.lastseen = 0;
         AFK.reason = false;
         AFK.isAfk = false;

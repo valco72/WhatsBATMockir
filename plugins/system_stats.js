@@ -1,12 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-Developer & Co-Founder - Phaticusthiccy
-*/
-
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
@@ -23,10 +14,10 @@ if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, Mockirin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```Co-Developer```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
+            await message.client.sendMessage(message.jid, '```WhatsGAIA ₲ GAIA halkinin hizmetinde!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH + '```\n*Discord Server:* https://discord.gg/gaia\n*₲ WhatsGAIA ₲*', MessageType.text);
         }
         else {
-            const pow = '*Powered by WhatsBAT*'
+            const pow = '*Powered by WhatsGAIA*'
             const payload = Config.ALIVEMSG
             const status = await message.client.getStatus()
             const ppUrl = await message.client.getProfilePicture() 
@@ -54,10 +45,10 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, Mockirin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```Co-Developer```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
+            await message.client.sendMessage(message.jid, '```WhatsGAIA ₲ GAIA halkinin hizmetinde!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH + '```\n*Discord Server:* https://discord.gg/gaia\n*₲ WhatsGAIA ₲*', MessageType.text);
         }
         else {
-            const pow = '*Powered by WhatsBAT*'
+            const pow = '*Powered by WhatsGAIA*'
             const payload = Config.ALIVEMSG
             const status = await message.client.getStatus()
             const ppUrl = await message.client.getProfilePicture() 
@@ -83,10 +74,10 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, dontAddCommandList: true}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(message.jid,'```Tanrı Türk\'ü Korusun. 🐺 WhatsBAT, Mockirin Hizmetinde!```\n\n*Version:* ```'+Config.VERSION+'```\n*Branch:* ```Co-Developer```\n*Whatsapp Group:* https://chat.whatsapp.com/JPZOBWcWJZQCns7RJETbwT\n*Developer:* wa.me/905061689909 \n *Co-Developer:* wa.me/905436254003' , MessageType.text);
+            await message.client.sendMessage(message.jid, '```WhatsGAIA ₲ GAIA halkinin hizmetinde!```\n\n*Version:* ```' + Config.VERSION + '```\n*Branch:* ```' + Config.BRANCH +'```\n*Discord Server:* https://discord.gg/gaia\n*₲ WhatsGAIA ₲*' , MessageType.text);
         }
         else {
-            const pow = '*Powered by WhatsBAT*'
+            const pow = '*Powered by WhatsGAIA*'
             const payload = Config.ALIVEMSG
             const status = await message.client.getStatus()
             const ppUrl = await message.client.getProfilePicture() 

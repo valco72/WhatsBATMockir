@@ -1,12 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-Coded by @KursadHD
-*/
-
 const Asena = require('../events');
 const {MessageType, Mimetype} = require('@adiwajshing/baileys');
 const memeMaker = require('meme-maker')
@@ -44,12 +35,12 @@ if (Config.WORKTYPE == 'private') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'asena-meme.png',
+            outfile: 'gaia-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsBAT'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('gaia-meme.png'), MessageType.image, {filename: 'gaia-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
             await info.delete();    
         });
     }));
@@ -82,12 +73,12 @@ else if (Config.WORKTYPE == 'public') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'asena-meme.png',
+            outfile: 'gaia-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsBAT'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('gaia-meme.png'), MessageType.image, {filename: 'gaia-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
             await info.delete();    
         });
     }));
@@ -117,12 +108,12 @@ else if (Config.WORKTYPE == 'public') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'asena-meme.png',
+            outfile: 'gaia-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsBAT'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('gaia-meme.png'), MessageType.image, {filename: 'gaia-meme.png', mimetype: Mimetype.png, caption: 'Made by WhatsGAIA'});
             await info.delete();    
         });
     }));
